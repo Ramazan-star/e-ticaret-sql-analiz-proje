@@ -60,12 +60,4 @@ INSERT INTO siparis_detaylari (siparis_id, urun_id, adet, birim_fiyat) VALUES
 (2,3,1,3000),
 (3,2,1,1500);
 
--- ==========================================
--- ANALİZ SORGULARI
--- ==========================================
 
--- 1️⃣ En Çok Satan Ürün
-SELECT 
-    u.urun_adi,
-    SUM(sd.adet) AS toplam_satis
-FROM siparis_det
